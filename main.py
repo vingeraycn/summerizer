@@ -1,6 +1,7 @@
 import discord
 import openai
 import re
+import os
 
 try:
   # 设置 Discord API 密钥和 ChatGPT API 密钥
