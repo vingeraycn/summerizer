@@ -5,8 +5,8 @@ import os
 
 try:
   # 设置 Discord API 密钥和 ChatGPT API 密钥
-  discord_bot = os.environ["DISCORD_BOT"]
-  openai.api_key = os.environ["OPEN_API_KEY"]
+  discord_bot = os.environ.get('DISCORD_BOT')
+  openai.api_key = os.environ.get('OPENAPI_KEY')
 except KeyError:
   print('Get Secret Failed')
 
